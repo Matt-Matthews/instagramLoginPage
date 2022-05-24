@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(253, 253, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.wrapper{
+    height: 100%;
+}
+/*'Pacifico', cursive*/
+.container{
+    border: 2px solid rgba(128, 128, 128, 0.24);
+    width: 300px;
+    height: 330px;
+    text-align: center;
+    margin-top: 15%;
+    background-color: white;
+}
+.container h3{
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+    font-size: 1.7rem;
+    margin-top: 2%;
+    color: black;
+}
+form{
+    width: 100%;
+    margin-top: 4%;
+}
+input[type=text], input[type=password]{
+    width: 80%;
+    margin-top: 2%;
+    padding: 10px;
+    border: 2px solid rgba(128, 128, 128, 0.24);
+    border-radius: 4px;
+    color: grey;
+}
+input[type=button]{
+    width: 86%;
+    margin-top: 2%;
+    padding: 5px;
+    margin-top: 5%;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 4px;
+    opacity: 30%;
+}
+.separator{
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.separator h4{
+    width: 13%;
+}
+.line{
+    height: 1px;
+    width: 36%;
+    background-color: rgba(128, 128, 128, 0.24);
+    
+}
+.facebook-Container{
+    margin-top: 6%;
+}
+.facebook-Container a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color:  #3b5998;
+}
+.fa.fa-facebook{
+    background-color:  #3b5998;
+    color: white;
+    padding-left: 5px;
+    padding-right: 3px;
+    padding-top: 4px;
+    margin-right: 5px;
+}
+.paswrd-container{
+    margin-top: 6%;
+}
+.paswrd-container a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color:  #3b5998;
+}
+.signup-wrapper{
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    margin-top: 3%;
+}
+.signup-container{
+    border: 2px solid rgba(128, 128, 128, 0.24);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-container p, .signup-container p{
+    color: rgba(0, 0, 0, 0.664);
+    font-weight: 500;
+    font-size: 18px;
+}
+.signup-container a{
+    font-size: 18px;
+    font-weight: bold;
+    color: dodgerblue;
+    text-decoration: none;
+    margin-left: 5px;
+}
+.bottom-wrapper{
+    width: 300px;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-container{
+    width: 100%;
+    text-align: center;
+}
+.appstores{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 10px;
+}
+.appleStore, .googlePlay, .apple{
+    display: flex;
+}
+.apple, .googlePlay{
+    background-color: black;
+    width: 40%;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    justify-content: space-between;
+    text-align: start;
+    cursor: pointer;
+    align-items: center;
+}
+
+.googlePlay img{
+    width: 20px;
+    height: 25px;
+}
+.fa.fa-apple{
+    font-size: 25px;
+    color: white;
+}
+.apple p, .apple h3, .googlePlay p, .googlePlay h3{
+    color: white;
+}
+.apple p, .googlePlay p{
+    font-size: 10px;
+}
+.apple h3, .googlePlay h3{
+    font-size: 15px;
+}
+
+@media screen and (max-width: 307px) {
+    .container, .signup-wrapper, .bottom-wrapper{
+        width: 250px;
+    }  
+    .container{
+        height: 280px;
+    } 
+    .signup-wrapper{
+        height: 40px;
+    }
+    .signup-wrapper p, .signup-wrapper a{
+        font-size: 12px;
+    }
+    .appstores{
+        display: inline;
+        
+    }
+    .bottom-container p{
+        font-size: 14px;
+    }
+    .apple, .googlePlay{
+        width: 90%;
+        justify-content: space-around;
+    }
+    .googlePlay{
+        margin-top: 5px;
+    }
+    .googlePlay img{
+        width: 30px;
+        height: 35px;
+    }
+    .fa.fa-apple{
+        font-size: 40px;
+        color: white;
+    }
+    .fa.fa-facebook{
+        font-size: 16px;
+    }
+    .facebook-Container a{
+        font-size: 12px;
+    }
+    .paswrd-container a{
+        font-size: 11px;
+    }
+    input[type=text], input[type=password]{
+        padding: 6px 10px;
+    }
+    input[type=button]{
+        padding: 3px 10px;
+        width: 89%;
+    }
+    .separator h4{
+        font-size: 12px;
+    }
+    .line{
+        width: 32%;
+    }
+}
